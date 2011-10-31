@@ -2,13 +2,13 @@ require_relative 'spec_helper'
 
 
 describe Quotes do
-  
+    
   subject { Quotes.new :file => TEXT_FILE }
   
   describe "#file" do
     
-    it "should respond to file" do
-      subject.should respond_to :file
+    it "should return the filename" do
+      subject.file.should == TEXT_FILE
     end
     
   end
@@ -117,6 +117,37 @@ describe Quotes do
       end
 
     end
+    
+  end
+  
+  describe "Class Methods" do
+    
+    describe "::load" do
+      
+      it "should create a quotes objects with a file" do
+        quotes = Quotes.load(TEXT_FILE)
+        quotes.all.should_not be_empty
+      end
+      
+    end
+    
+    describe "::missing_quote" do
+      
+      
+      it "should allow you to set the message when a quote is missing" do
+        
+        expected_quote = "All of our quotes have gone missing"
+        
+        Quotes.missing_quote = expected_quote
+        
+        quotes = Quotes.load("FILE_DOES_NOT_EXIST")
+        quotes[3].should == expected_quote
+        
+      end
+      
+      
+    end
+    
     
   end
   
