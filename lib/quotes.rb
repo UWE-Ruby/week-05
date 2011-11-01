@@ -16,8 +16,22 @@
 # @see http://rubydoc.info/stdlib/core/1.9.2/Module#alias_method-instance_method
 # 
 class Quotes
-  def initialize(options = {})
+  
+  class << self
     
+    attr_accessor :missing_quote
+    
+    def missing_quote
+      @missing_quote || "Could not find a quote at this time"
+    end
+
+    def load(filename)
+      self.new :file => filename
+    end
+    
+  end
+  
+  def initialize(options = {})
     @quotes = []
     
     options.each do |key,value|
@@ -31,7 +45,7 @@ class Quotes
     
   def find(linenumber)
     if @quotes.empty? 
-      "Could not find a quote at this time"
+      Quotes.missing_quote
     else
       @quotes[linenumber] || @quotes.sample
     end
@@ -40,7 +54,7 @@ class Quotes
   alias_method :[], :find
   
   def file=(filename)
-    @filename = filename
+    @file = filename
     
     if File.exists? filename
       @quotes = File.readlines(filename).map {|quote| quote.strip }
