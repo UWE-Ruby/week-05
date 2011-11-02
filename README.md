@@ -19,7 +19,9 @@ This exercise will mostly be organizing the methods that we created last week in
 
 #### Reading
 
-*
+* Programming Ruby, Chapter 3
+* [Classes on WikiBooks](http://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Classes)
+* Advanced: Metaprogramming Ruby, Chapter 4
 
 #### Exercise
 
