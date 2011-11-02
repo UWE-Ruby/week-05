@@ -15,3 +15,7 @@
 # 
 # @see http://rubydoc.info/stdlib/core/1.9.2/Module#alias_method-instance_method
 # 
+class Quotes
+  
+  
+end

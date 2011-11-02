@@ -16,3 +16,10 @@ end
 # methods: #search_for_quote and #find_quote
 
 require_relative 'quotes'
+
+#
+# You should uncomment these if you are going to write some tests for classes
+# or functions in these files.
+# 
+# require_relative 'craigslist'
+# require_relative 'twitterapi'
