@@ -1,4 +1,4 @@
-# Week 4
+# Week 5
 
 ## Introduction
 
@@ -21,6 +21,7 @@ This exercise will mostly be organizing the methods that we created last week in
 
 * Programming Ruby, Chapter 3
 * [Classes on WikiBooks](http://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Classes)
+* [Ruby Debug](http://bashdb.sourceforge.net/ruby-debug.html)
 * Advanced: Metaprogramming Ruby, Chapter 4
 
 #### Exercise
