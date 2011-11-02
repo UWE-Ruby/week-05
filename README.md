@@ -69,11 +69,11 @@ Third, push your new updated `master` branch to origin.
   
 ### Tag that you are 'complete'
 
-Tags are a great way to mark releases. They are also useful as they can be used as references when you want to return to a position in time that is important. Like when the software as at `version-1.1` or whatever the name the tag.
+Tags are a great way to mark releases. They are also useful as they can be used as references when you want to return to a position in time that is important. Like when the software as at version `0.1.1` or whatever the name the tag.
 
 With your completed `master` branch with solutions this is a good time to mark it in case you want to explore or share some other solutions on the `master` branch.
 
-    $ get co master
+    $ git co master
     
 Give the master branch a tag at this point in time. Here we will state that the branch is 'complete' as the solutions are all in for the assignment.
 
@@ -117,3 +117,9 @@ NOTE: The results from a search is a Hash and not exactly as the documentation o
 * Try creating a search that you might use.
 * Try creating output that includes more useful information (e.g. link,cost,).
 * Try excluding words or posts older than a certain amount of time
+
+### Git
+
+Still not feeling confident about git? Not to worry, you are not alone. But then again, graph theory (and Git) can be easily explained using Tinker Toys! Watch this video for an amusing yet accurate look at how git actually works. It's far simpler than it appears.
+
+[Git For Ages 4 and Up|http://blip.tv/open-source-developers-conference/git-for-ages-4-and-up-4460524]
