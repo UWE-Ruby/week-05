@@ -28,7 +28,7 @@ describe Quotes do
 
       subject { Quotes.new :file => "FILE_DOES_NOT_EXIST" }
 
-      it "should return an empty list of results" do
+      it "should return the default missing quote message" do
         subject[3].should == "Could not find a quote at this time"
         subject.find(3).should == "Could not find a quote at this time"
       end
