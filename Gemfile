@@ -12,3 +12,9 @@ group :test do
   gem 'guard'
   gem 'guard-rspec'
 end
+
+platforms :mswin, :mingw do
+  gem 'rb-fchange'
+  gem 'rb-notifu'
+  gem 'win32console'
+end
