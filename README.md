@@ -58,7 +58,7 @@ When you are done with your branch it's time to re-incorporate those changes bac
 
 First, return back to your `master` branch
 
-    $ git co master
+    $ git checkout master
 
 Second, merge the local `solutions` branch onto your current branch
     
@@ -74,7 +74,7 @@ Tags are a great way to mark releases. They are also useful as they can be used 
 
 With your completed `master` branch with solutions this is a good time to mark it in case you want to explore or share some other solutions on the `master` branch.
 
-    $ git co master
+    $ git checkout master
     
 Give the master branch a tag at this point in time. Here we will state that the branch is 'complete' as the solutions are all in for the assignment.
 
